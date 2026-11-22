@@ -8,7 +8,8 @@ an empty cottage, no one living there, boats still turning toward
 it. It shows rather than instructs (no "you", no command, no
 "wonder" or "what if"), uses plain concrete words, slows to short
 sentences at the close, and leaves one image to return to: a voice
-you almost know. That meets the judge's five criteria in order
+you almost know. The mystery is the image itself, not a question
+asked aloud -- the reader is left holding it, not told to hold it. That meets the judge's five criteria in order
 (it intrigues; the calm comes from the text itself; rhythm and
 plain words; an image that lingers; a voice of its own).
 
