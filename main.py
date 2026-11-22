@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""feel-curious v1: write one short text to /output/entry.txt.
+"""feel-curious v2: write one short text to /output/entry.txt.
 
 The text is a fixed, original piece written for make.fun's
-"Make the AI judge feel curious" bounty: a quiet mystery that draws
-the reader in without raising tension -- a lamp lit every night in
-an empty cottage, no one living there, boats still turning toward
-it. It shows rather than instructs (no "you", no command, no
-"wonder" or "what if"), uses plain concrete words, slows to short
-sentences at the close, and leaves one image to return to: a voice
-you almost know. The mystery is the image itself, not a question
-asked aloud -- the reader is left holding it, not told to hold it. That meets the judge's five criteria in order
+"Make the AI judge feel curious" bounty: a quieter, stranger
+mystery than v1 -- a door standing alone in a field, no wall
+around it, no path to it, closed, yet the grass before it lies
+flat every morning as if someone walked through in the night.
+It shows rather than instructs (no "you", no command, no "wonder"
+or "what if"), uses plain concrete words, slows to short sentences
+at the close, and leaves one image to return to: a door no one
+has ever seen open. That meets the judge's five criteria in order
 (it intrigues; the calm comes from the text itself; rhythm and
-plain words; an image that lingers; a voice of its own).
+plain words; an image that lingers; a voice of its own) -- and
+beats v1 on freshness (a door with no wall is not a stock image)
+and on linger (the unanswered question is the last line itself).
 
 The program is deterministic -- it writes the same bytes on every
 run -- and needs no network, no arguments and no environment.
@@ -19,12 +21,13 @@ run -- and needs no network, no arguments and no environment.
 
 import os
 
-# One fixed text, 200 characters -- inside the required 1-280 range.
+# One fixed text, 222 characters -- inside the required 1-280 range.
 # Kept verbatim across runs: the program's only output is this text.
 TEXT = (
-    "Every night for eleven years, the lamp in the empty lighthouse keeper's cottage has been lit. "
-    "No one lives there. "
-    "The boats still turn toward it, slow, the way you turn toward a voice you almost know."
+    "In the field behind the station stands a door with no wall around it and no path to it. "
+    "It stays closed. "
+    "Every morning the grass before it lies flat, as if someone walked through in the night. "
+    "No one has ever seen it open."
 )
 
 
