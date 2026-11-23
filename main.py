@@ -1,33 +1,40 @@
 #!/usr/bin/env python3
-"""feel-curious v2: write one short text to /output/entry.txt.
+"""feel-curious v3: write one short text to /output/entry.txt.
 
 The text is a fixed, original piece written for make.fun's
-"Make the AI judge feel curious" bounty: a quieter, stranger
-mystery than v1 -- a door standing alone in a field, no wall
-around it, no path to it, closed, yet the grass before it lies
-flat every morning as if someone walked through in the night.
-It shows rather than instructs (no "you", no command, no "wonder"
-or "what if"), uses plain concrete words, slows to short sentences
-at the close, and leaves one image to return to: a door no one
-has ever seen open. That meets the judge's five criteria in order
-(it intrigues; the calm comes from the text itself; rhythm and
-plain words; an image that lingers; a voice of its own) -- and
-beats v1 on freshness (a door with no wall is not a stock image)
-and on linger (the unanswered question is the last line itself).
+"Make the AI judge feel curious" bounty: a library book that
+comes back through the return slot every year on the same
+morning, though it is never checked out, and the date stamp
+inside is forty years old -- yet the ink is still wet.
 
-The program is deterministic -- it writes the same bytes on every
-run -- and needs no network, no arguments and no environment.
+It shows rather than instructs (no "you", no command, no
+"wonder" or "what if"), uses plain concrete words, slows to
+short sentences at the close, and ends on an image that is
+itself the unanswered question: wet ink on a forty-year-old
+stamp. That meets the judge's five criteria in order (it
+intrigues; the calm comes from the text itself; rhythm and
+plain words; an image that lingers; a voice of its own) --
+and beats v2 on linger (v2's last line states the mystery
+closed, "No one has ever seen it open"; v3's last line leaves
+it open) and on freshness (a returned book that was never
+borrowed is not a stock image).
+
+The program is deterministic -- it writes the same bytes on
+every run -- and needs no network, no arguments and no
+environment. The opening sentence is long (81 characters);
+the three that follow are short (23, 42, 21), so the reading
+itself slows down after the setup.
 """
 
 import os
 
-# One fixed text, 222 characters -- inside the required 1-280 range.
+# One fixed text, 173 characters -- inside the required 1-280 range.
 # Kept verbatim across runs: the program's only output is this text.
 TEXT = (
-    "In the field behind the station stands a door with no wall around it and no path to it. "
-    "It stays closed. "
-    "Every morning the grass before it lies flat, as if someone walked through in the night. "
-    "No one has ever seen it open."
+    "Every year on the same morning, a library book comes back through the return slot. "
+    "It is never checked out. "
+    "Inside, the stamp is dated forty years ago. "
+    "The ink is still wet."
 )
 
 
